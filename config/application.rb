@@ -38,8 +38,10 @@ module Cor1440
       Pathname(ENV['HEB412_RUTA']) : Rails.root.join('public', 'heb412')
     puts "OJO application.rb config.x.heb412_ruta=#{config.x.heb412_ruta}"
 
-    config.hosts <<  (ENV['CONFIG_HOSTS'] ? ENV['CONFIG_HOSTS'].downcase : 'nodos.pasosdeJesus.org'.downcase)
-    puts "OJO application.rb config.x.config.hosts=#{config.x.config.hosts}"
+    config.hosts <<  (ENV['CONFIG_HOSTS'] && ENV['CONFIG_HOSTS'] != '' ? 
+                      ENV['CONFIG_HOSTS'].downcase : 
+                      'defensor.info'.downcase)
+    puts "OJO application.rb config.hosts='#{config.hosts}'"
 
    end
 end
