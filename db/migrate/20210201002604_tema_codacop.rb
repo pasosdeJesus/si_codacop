@@ -22,8 +22,8 @@ class TemaCodacop < ActiveRecord::Migration[6.0]
         alerta_exito_fuente = '#000000',
         alerta_problema_fondo = '#bf1b28',
         alerta_problema_fuente = '#ffffff',
-        color_flota_subitem_fuente = '#266dd3',
-        color_flota_subitem_fondo = '#ffffff'
+        color_flota_subitem_fuente = '#e6adc7',
+        color_flota_subitem_fondo = '#a43c6c'
 
       WHERE id=1;
 
