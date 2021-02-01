@@ -24,15 +24,16 @@ module Cor1440
 
     config.active_record.schema_format = :sql
 
-    config.x.url_colchon = 'colchon-articulos'
+    config.x.url_colchon = ENV['COLCHON_ARTICULOS'] || 'colchon-articulos'
 
-    config.x.formato_fecha = 'dd/M/yyyy'
+    config.x.formato_fecha = ENV['FORMATO_FECHA'] || 'dd/M/yyyy'
 
-    #config.relative_url_root = "/cor1440"
+    config.relative_url_root = ENV['RUTA_RELATIVA'] || "/cor1440"
 
-    config.x.heb412_ruta = Rails.root.join('public', 'heb412')
+    config.x.heb412_ruta = ENV['HEB412_RUTA'] && ENV['HEB412_RUTA'] != '' ?
+      Pathname(ENV['HEB412_RUTA']) : Rails.root.join('public', 'heb412')
 
     config.hosts << ENV['CONFIG_HOSTS'] || '127.0.0.1'
 
-  end
+   end
 end

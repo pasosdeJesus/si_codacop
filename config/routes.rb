@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  scope 'cor1440/' do
+  rutarel = (ENV['RUTA_RELATIVA'] || 'cor1440/')
+  puts "En config/routes.rb  1 rutarel=#{rutarel}"
+  scope rutarel do 
     devise_scope :usuario do
     get 'sign_out' => 'devise/sessions#destroy'
   
@@ -25,8 +27,9 @@ Rails.application.routes.draw do
     root 'cor1440_gen/hogar#index'
   end  
 
-  mount Sip::Engine, at: 'cor1440/', as: 'sip'
-  mount Cor1440Gen::Engine, at: "cor1440/", as: 'cor1440_gen'
-  mount Heb412Gen::Engine, at: "cor1440/", as: 'heb412_gen'
-  mount Mr519Gen::Engine, at: "cor1440/", as: 'mr519_gen'
+  puts "En config/routes.rb 2 rutarel=#{rutarel}"
+  mount Sip::Engine, at: rutarel, as: 'sip'
+  mount Cor1440Gen::Engine, at: rutarel, as: 'cor1440_gen'
+  mount Heb412Gen::Engine, at: rutarel, as: 'heb412_gen'
+  mount Mr519Gen::Engine, at: rutarel, as: 'mr519_gen'
 end
