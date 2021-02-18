@@ -25,23 +25,14 @@ module Cor1440
 
     config.active_record.schema_format = :sql
 
-    config.x.url_colchon = ENV['COLCHON_ARTICULOS'] || 'colchon-articulos'
-    puts "OJO application.rb config.x.url_colchon=#{config.x.url_colchon}"
+    config.x.formato_fecha = ENV.fetch('FORMATO_FECHA', 'dd/M/yyyy')
 
-    config.x.formato_fecha = ENV['FORMATO_FECHA'] || 'dd/M/yyyy'
-    puts "OJO application.rb config.x.formato_fecha=#{config.x.formato_fecha}"
+    config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/codacop/si')
 
-    config.relative_url_root = ENV['RUTA_RELATIVA'] || "/cor1440"
-    puts "OJO application.rb config.x.relative_url_root=#{config.x.relative_url_root}"
+    config.x.heb412_ruta = Pathname(
+      ENV.fetch('HEB412_RUTA', Rails.root.join('public', 'heb412').to_s)
+    )
 
-    config.x.heb412_ruta = ENV['HEB412_RUTA'] && ENV['HEB412_RUTA'] != '' ?
-      Pathname(ENV['HEB412_RUTA']) : Rails.root.join('public', 'heb412')
-    puts "OJO application.rb config.x.heb412_ruta=#{config.x.heb412_ruta}"
-
-    config.hosts <<  (ENV['CONFIG_HOSTS'] && ENV['CONFIG_HOSTS'] != '' ? 
-                      ENV['CONFIG_HOSTS'].downcase : 
-                      'defensor.info'.downcase)
-    puts "OJO application.rb config.hosts='#{config.hosts}'"
-
+    config.hosts <<  ENV.fetch('CONFIG_HOSTS', 'defensor.info').downcase
    end
 end

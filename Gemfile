@@ -37,9 +37,7 @@ gem 'prawnto_2',  :require => 'prawnto'
 
 gem 'prawn-table'
 
-gem 'puma'
-
-gem 'rails', '~> 6.0.3.4'
+gem 'rails', '~> 6.1'
 
 gem 'rails-i18n'
 
@@ -86,6 +84,8 @@ gem 'cor1440_gen', # Motor Cor1440_gen
 
 group :development do
 
+  gem 'puma'
+
   gem 'web-console'
 
 end
@@ -96,6 +96,8 @@ group :development, :test do
   #gem 'byebug'
 
   gem 'colorize' # Color en terminal
+
+  gem 'dotenv-rails'
 end
 
 group :test do

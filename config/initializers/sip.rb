@@ -1,14 +1,14 @@
 require 'sip/version'
 
 Sip.setup do |config|
-  config.ruta_anexos = "#{Rails.root}/archivos/anexos/"
-  config.ruta_volcados = "#{Rails.root}/archivos/bd/"
-  # En heroku los anexos son super-temporales
-  if ENV["HEROKU_POSTGRESQL_MAUVE_URL"]
-  config.ruta_anexos = "#{Rails.root}/tmp/"
-  end
-  config.titulo = "SI CODACOP " + Cor1440Gen::VERSION
-  
+  config.ruta_anexos = ENV.fetch('SIP_RUTA_ANEXOS', 
+                                 "#{Rails.root}/archivos/anexos")
+  config.ruta_volcados = ENV.fetch('SIP_RUTA_VOLCADOS',
+                                   "#{Rails.root}/archivos/bd")
+  config.titulo = "sip #{Sip::VERSION}"
+  config.titulo = "SI CODACOP #{Cor1440Gen::VERSION}"
+
+  # Tema 1
   config.colorom_fondo = '#ffffff'
   config.colorom_color_fuente = '#000000'
   config.colorom_nav_ini = '#a43c6c'
