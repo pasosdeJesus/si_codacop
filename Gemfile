@@ -83,16 +83,13 @@ gem 'cor1440_gen', # Motor Cor1440_gen
 
 
 group :development do
-
   gem 'puma'
 
   gem 'web-console'
-
 end
 
 
 group :development, :test do
-
   #gem 'byebug'
 
   gem 'colorize' # Color en terminal
@@ -101,13 +98,11 @@ group :development, :test do
 end
 
 group :test do
-
   gem 'capybara'
 
   gem 'selenium-webdriver'
 
   gem 'simplecov', '<0.18' # Debido a https://github.com/codeclimate/test-reporter/issues/418
-
 end
 
 
