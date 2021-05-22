@@ -1,20 +1,6 @@
 GIT
-  remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 1e164f6c4784a7aa581d7225a5d9eb9ef4b7e965
-  branch: main
-  specs:
-    cor1440_gen (1.0b3)
-      devise
-      heb412_gen
-      jquery-rails
-      mr519_gen
-      paperclip
-      rails
-      sip
-
-GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: b054577d4aad494b53ababd2ba499a81d56a687c
+  revision: 6413cce0eaa7362033f6a5257a8e33359c734ffc
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: ec21999bc5fafdf58defc9af92ad595c8566b851
+  revision: 68b951d6383155bc53cc138cde291950f18b1d3c
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d370cdbcaa1d226ded61549a2e75690996ab1d04
+  revision: c89eb86f30c8ea4b541bedace02cd5bbd684e808
   branch: main
   specs:
     sip (2.0.b11)
@@ -57,6 +43,18 @@ GIT
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
+
+PATH
+  remote: ../cor1440_gen
+  specs:
+    cor1440_gen (1.0b3)
+      devise
+      heb412_gen
+      jquery-rails
+      mr519_gen
+      paperclip
+      rails
+      sip
 
 GEM
   remote: https://rubygems.org/
@@ -129,6 +127,7 @@ GEM
     bootsnap (1.7.5)
       msgpack (~> 1.0)
     builder (3.2.4)
+    byebug (11.1.3)
     camertron-eprun (1.1.1)
     cancancan (3.2.1)
     capybara (3.35.3)
@@ -171,7 +170,7 @@ GEM
       railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.0)
+    ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.10)
@@ -230,7 +229,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (4.0.6)
-    puma (5.3.1)
+    puma (5.3.2)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -340,12 +339,13 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  ruby
+  x86_64-openbsd
 
 DEPENDENCIES
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
+  byebug
   cancancan
   capybara
   cocoon!
@@ -385,7 +385,7 @@ DEPENDENCIES
   will_paginate
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 3.0.1p64
 
 BUNDLED WITH
-   2.2.15
+   2.2.17

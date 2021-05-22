@@ -78,8 +78,8 @@ gem 'heb412_gen',  # Motor de nube y llenado de plantillas
   #path: '../heb412_gen'
 
 gem 'cor1440_gen', # Motor Cor1440_gen
-  git: 'https://github.com/pasosdeJesus/cor1440_gen.git', branch: :main
-  #path: '../cor1440_gen'
+  #git: 'https://github.com/pasosdeJesus/cor1440_gen.git', branch: :main
+  path: '../cor1440_gen'
 
 
 group :development do
@@ -90,7 +90,7 @@ end
 
 
 group :development, :test do
-  #gem 'byebug'
+  gem 'byebug'
 
   gem 'colorize' # Color en terminal
 
