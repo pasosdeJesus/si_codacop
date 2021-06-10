@@ -29,6 +29,8 @@ gem 'odf-report' # Genera ODT
 
 gem 'paperclip' # Maneja adjuntos
 
+gem 'parslet'
+
 gem 'pg' # Postgresql
 
 gem 'prawn' # Generación de PDF
