@@ -40,6 +40,9 @@
   <%= grupo_menus :pull => :right do %>
     <% if !current_usuario.nil? %>
       <%= despliega_abajo "Documentos y plantillas" do %>
+        <%= opcion_menu "Manual de Cor1440", 
+          'https://docs.google.com/document/d/1mmydkqNmZbXkzcpkiegQ_XAP_NkjfX-RXgcW1yzjdpE/edit?usp=sharing', 
+          target: '_blank', desplegable: true %>
         <%= opcion_menu "Nube", heb412_gen.sisini_path, 
           desplegable: true %>
         <% if can? :manage, ::Heb412Gen::Plantillahcm %>
@@ -68,6 +71,8 @@
           <%= opcion_menu "Tablas básicas", sip.tablasbasicas_path,
             desplegable: true %>
         <% end %>
+        <%= opcion_menu "Ver Control de Acceso", 
+          sip.ayuda_controldeacceso_path, desplegable: true %>
       <% end %>
       <%= opcion_menu "Salir #{current_usuario.nusuario}", main_app.sign_out_path %>
     <% else %>

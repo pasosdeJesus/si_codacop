@@ -30,4 +30,6 @@ Sip.setup do |config|
   config.colorom_alerta_problema_fuente = '#ffffff'
   config.colorom_color_flota_subitem_fuente = '#e6adc7'
   config.colorom_color_flota_subitem_fondo = '#a43c6c'
+
+  Cor1440Gen.actividadg5 = "Externos diversos"
 end

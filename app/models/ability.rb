@@ -1,6 +1,27 @@
 # encoding: UTF-8
 class Ability  < Cor1440Gen::Ability
 
+  ROLES_CA = [
+    'Administrar todos los proyectos. ' +
+    'Administrar todas las actividades. ' +
+    'Administrar usuarios. ' + 
+    'Administrar documentos en nube. ' +
+    'Administrar tablas básicas. ', #ROLADMIN
+
+    '', # 2
+
+    'Las mismas del administradorconteos de casos. ', #ROLDIR
+ 
+    '', # 4
+
+    'Ver proyectos y administrar aquellos de los que es responsable. ' +
+    'Administrar actividades de proyectos institucionales y en los que está en el equipo de trabajo. ' +
+    'Ver documentos en nube. ', # ROLOPERADOR
+
+    '', # 6
+    '' # 7
+  ]
+
   def tablasbasicas 
     Sip::Ability::BASICAS_PROPIAS + BASICAS_PROPIAS - [
       ['Sip', 'fuenteprensa'], 
