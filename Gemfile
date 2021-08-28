@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '>=2.4'
 
+gem 'apexcharts'
 
 gem 'bcrypt'
 
@@ -69,19 +70,19 @@ gem 'webpacker', '~> 6.0.0.rc.1'
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :bs5
   #path: '../sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
-  git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :bs5
   #path: '../mr519_gen'
 
 gem 'heb412_gen',  # Motor de nube y llenado de plantillas
-  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :bs5
   #path: '../heb412_gen'
 
 gem 'cor1440_gen', # Motor Cor1440_gen
-  git: 'https://github.com/pasosdeJesus/cor1440_gen.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/cor1440_gen.git', branch: :bs5
   #path: '../cor1440_gen'
 
 
