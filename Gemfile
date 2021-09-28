@@ -61,7 +61,7 @@ gem 'tzinfo' # Zonas horarias
 
 gem 'will_paginate' # Listados en páginas
 
-gem 'webpacker', '~> 6.0.0.rc.1'
+gem 'webpacker', '6.0.0.rc.1'
 
 
 
