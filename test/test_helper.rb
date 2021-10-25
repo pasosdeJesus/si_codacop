@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ENV['RAILS_ENV'] ||= 'test'
 
 require 'simplecov'
@@ -10,7 +8,7 @@ require 'rails/test_help'
 class ActiveSupport::TestCase
 
   fixtures :all
-  
+
   protected
   def load_seeds
     load "#{Rails.root}/db/seeds.rb"
