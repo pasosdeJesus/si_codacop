@@ -1,19 +1,23 @@
 /* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
+
+// Este archivo se compila automaticamente con Webpack, junto con otros
+// archivos presentes en este directorio.  Lo animamos a poner la lógica
+// de su aplicacíon en una estructura relevante dentro de app/javascript
+// y solo usar estos archivos de paquete para referencia ese código
+// para que sea compilado.
 //
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
+// Para referenciar este archivo, añada <%= javascript_pack_tag 'application' %>
+// al archivo de maquetación adecuado, como 
+// app/views/layouts/application.html.erb
 
 
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
+// Quite comentario para copiar todas las imágenes estáticas de ../images 
+// a la carpeta de salida y referenciarlas con la función auxiliar
+// image_pack_tag helper en las vistas (e.g <%= image_pack_tag 'rails.png' %>)
+// o mediante el auxiliar de Javascript `imagePath`.
 //
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
+// const imagenes = require.context('../images', true)
+// const rutaImagenes = (nombre) => images(nombre, true)
 
 console.log('Hola Mundo desde Webpacker')
 
@@ -23,20 +27,23 @@ Rails.start()
 import Turbolinks from "turbolinks"
 Turbolinks.start()
 
-import ApexCharts from 'apexcharts'
-window.ApexCharts = ApexCharts
+import $ from "expose-loader?exposes=$,jQuery!jquery";
+import 'jquery-ui'
+import 'jquery-ui/ui/widgets/autocomplete' 
+import 'jquery-ui/ui/data' 
+import 'jquery-ui/ui/focusable' 
+import 'jquery-ui/ui/widgets/tooltip' 
 
-import $ from "expose-loader?exposes=$,jQuery!jquery"
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
-
 import * as bootstrap from 'bootstrap'              // Maquetacion y elementos de diseño
-
 import 'chosen-js/chosen.jquery';       // Cuadros de seleccion potenciados
 import 'bootstrap-datepicker'
 import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js'
-import 'jquery-ui'
-import 'jquery-ui/ui/widgets/autocomplete'
-import 'jquery-ui/ui/data'
-import 'jquery-ui/ui/focusable'
 
-
+import ApexCharts from 'apexcharts'
+window.ApexCharts = ApexCharts
+import apexes from 'apexcharts/dist/locales/es.json'
+Apex.chart = {
+  locales: [apexes],
+  defaultLocale: 'es',
+}
