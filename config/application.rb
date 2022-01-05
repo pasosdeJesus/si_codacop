@@ -31,6 +31,9 @@ module Cor1440
       ENV.fetch('HEB412_RUTA', Rails.root.join('public', 'heb412').to_s)
     )
 
-    config.hosts <<  ENV.fetch('CONFIG_HOSTS', 'defensor.info').downcase
+    puts "CONFIG_HOSTS="+ENV.fetch('CONFIG_HOSTS', 'defensor.info').to_s
+    config.hosts.concat(
+      ENV.fetch('CONFIG_HOSTS', 'defensor.info').downcase.split(";"))
+
    end
 end
