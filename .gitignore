@@ -44,3 +44,4 @@ yarn-debug.log*
 config/credentials.yml.enc
 public/images/logo.jpg
 public/codacop/si/assets/
+app/assets/builds
