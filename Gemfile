@@ -4,6 +4,8 @@ ruby '>=2.4'
 
 gem 'apexcharts'
 
+gem 'babel-transpiler'
+
 gem 'bcrypt'
 
 gem 'bigdecimal'
@@ -59,6 +61,10 @@ gem 'simple_form' # Formularios simples
 
 gem 'sprockets-rails'
 
+gem 'stimulus-rails'
+
+gem 'turbo-rails'
+
 gem 'twitter_cldr' # ICU con CLDR
 
 gem 'tzinfo' # Zonas horarias
@@ -103,6 +109,8 @@ group :development, :test do
 end
 
 group :test do
+  gem 'cuprite'
+
   gem 'capybara'
 
   gem 'selenium-webdriver'
