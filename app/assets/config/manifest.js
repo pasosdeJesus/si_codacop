@@ -2,6 +2,7 @@
 //= link_directory ../javascripts .js
 //= link_directory ../stylesheets .css
 //= link_directory ../../../node_modules/chosen-js .png
-
+//= link recursos_sprockets.js
+//= link recursos_sprockets.js.map
 //= link application.css
 //= link_tree ../builds
