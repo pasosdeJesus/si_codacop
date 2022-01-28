@@ -61,7 +61,7 @@ document.addEventListener('turbo:load', (e) => {
  * tener cuidado porque puede dispararse el evento turbo varias
  * veces consecutivas al cargarse  la misma página.
  */
-  
+
   console.log('Escuchador turbo:load')
 
   sip_ejecutarAlCargarPagina(window)
