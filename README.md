@@ -1,10 +1,8 @@
 # SI-CODACOP
 
-[![Revisado por Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) [![Estado Construcción](https://gitlab.com/pasosdeJesus/si_codacop/badges/main/pipeline.svg)](https://gitlab.com/pasosdeJesus/si_codacop/-/pipelines)[![Clima del Código](https://codeclimate.com/github/pasosdeJesus/si_codacop/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/si_codacop) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/si_codacop/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/si_codacop) [![security](https://hakiri.io/github/pasosdeJesus/si_codacop/master.svg)](https://hakiri.io/github/pasosdeJesus/si_codacop/master)
-
+[![Revisado por Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) Pruebas y seguridad:[![Estado Construcción](https://gitlab.com/pasosdeJesus/si_codacop/badges/main/pipeline.svg)](https://gitlab.com/pasosdeJesus/si_codacop/-/pipelines?page=1&scope=all&ref=main) [![Clima del Código](https://codeclimate.com/github/pasosdeJesus/si_codacop/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/si_codacop) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/si_codacop/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/si_codacop)
 
 Sistema para planeación y seguimiento de actividades e informes en CODACOP.
-
 
 ### Requerimientos
 * Ruby version >= 3.0
