@@ -2886,6 +2886,13 @@ CREATE TABLE public.sip_grupoper (
 
 
 --
+-- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en cor1440_desarrollo';
+
+
+--
 -- Name: sip_grupoper_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
