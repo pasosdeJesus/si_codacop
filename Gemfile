@@ -109,10 +109,9 @@ group :development, :test do
 end
 
 group :test do
+  gem 'capybara'
+  
   gem 'cuprite'
-
-  gem 'capybara',
-    git: 'https://github.com/teamcapybara/capybara.git', branch: :master
 
   gem 'selenium-webdriver'
 
