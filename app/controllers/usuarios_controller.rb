@@ -1,6 +1,6 @@
 require 'cor1440_gen/concerns/controllers/usuarios_controller'
 
-class UsuariosController < Sip::ModelosController
+class UsuariosController < Msip::ModelosController
   include Cor1440Gen::Concerns::Controllers::UsuariosController
 
   # Sin definición de autorización por ser requerida por no autenticados
@@ -10,7 +10,7 @@ class UsuariosController < Sip::ModelosController
       "nusuario",
       "nombre",
       "email",
-      "sip_grupo_ids",
+      "grupo_ids",
       "habilitado",
     ]
   end
@@ -31,7 +31,7 @@ class UsuariosController < Sip::ModelosController
       r += [
         "email",
         "tema",
-        "sip_grupo",
+        "msip_grupo",
         "fechacreacion_localizada",
         "fechadeshabilitacion_localizada",
       ]

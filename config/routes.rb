@@ -26,7 +26,7 @@ Rails.application.routes.draw do
     root 'cor1440_gen/hogar#index'
   end
 
-  mount Sip::Engine, at: rutarel, as: 'sip'
+  mount Msip::Engine, at: rutarel, as: 'msip'
   mount Cor1440Gen::Engine, at: rutarel, as: 'cor1440_gen'
   mount Heb412Gen::Engine, at: rutarel, as: 'heb412_gen'
   mount Mr519Gen::Engine, at: rutarel, as: 'mr519_gen'

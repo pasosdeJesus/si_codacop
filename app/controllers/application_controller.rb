@@ -1,4 +1,4 @@
-class ApplicationController < Sip::ApplicationController
+class ApplicationController < Msip::ApplicationController
 
   # Sin definicion de autorizacion por ser utilidad
   

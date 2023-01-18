@@ -1,11 +1,11 @@
-require 'sip/version'
+require 'msip/version'
 
-Sip.setup do |config|
+Msip.setup do |config|
   config.ruta_anexos = ENV.fetch('SIP_RUTA_ANEXOS', 
                                  "#{Rails.root}/archivos/anexos")
   config.ruta_volcados = ENV.fetch('SIP_RUTA_VOLCADOS',
                                    "#{Rails.root}/archivos/bd")
-  config.titulo = "sip #{Sip::VERSION}"
+  config.titulo = "msip #{Msip::VERSION}"
   config.titulo = "SI CODACOP #{Cor1440Gen::VERSION}"
 
   # Tema 1
