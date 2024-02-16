@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 588c599a21f9faa94f4552133f9f0be947024e9d
+  revision: d73942a5e1586be251efff6c8cd02b9ec7b85821
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 3519bebab3cc88355c52f566c0d0b5eb624e0514
+  revision: 7f514eeba4d95a6cb473e9f94e415c416be58679
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -201,9 +201,9 @@ GEM
     devise-i18n (1.12.0)
       devise (>= 4.9.0)
     docile (1.4.0)
-    dotenv (3.0.0)
-    dotenv-rails (3.0.0)
-      dotenv (= 3.0.0)
+    dotenv (3.0.2)
+    dotenv-rails (3.0.2)
+      dotenv (= 3.0.2)
       railties (>= 6.1)
     drb (2.2.0)
       ruby2_keywords
@@ -280,7 +280,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
-    pg (1.5.4)
+    pg (1.5.5)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)

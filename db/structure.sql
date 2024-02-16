@@ -3079,6 +3079,13 @@ CREATE TABLE public.msip_grupoper (
 
 
 --
+-- Name: TABLE msip_grupoper; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.msip_grupoper IS 'Creado por sip en cor1440_desarrollo';
+
+
+--
 -- Name: msip_grupoper_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -3162,11 +3169,11 @@ UNION
 --
 
 CREATE MATERIALIZED VIEW public.msip_mundep AS
- SELECT msip_mundep_sinorden.idlocal,
-    msip_mundep_sinorden.nombre,
-    to_tsvector('spanish'::regconfig, public.unaccent(msip_mundep_sinorden.nombre)) AS mundep
+ SELECT idlocal,
+    nombre,
+    to_tsvector('spanish'::regconfig, public.unaccent(nombre)) AS mundep
    FROM public.msip_mundep_sinorden
-  ORDER BY (msip_mundep_sinorden.nombre COLLATE public.es_co_utf_8)
+  ORDER BY (nombre COLLATE public.es_co_utf_8)
   WITH NO DATA;
 
 
