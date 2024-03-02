@@ -71,6 +71,10 @@
           <%= opcion_menu "Tablas básicas", msip.tablasbasicas_path,
             desplegable: true %>
         <% end %>
+        <% if can? :manage, Msip::Respaldo7z %>
+          <%= opcion_menu "Respaldo cifrado", msip.respaldo7z_path,
+            desplegable: true %>
+        <% end %>
         <%= opcion_menu "Ver Control de Acceso", 
           msip.ayuda_controldeacceso_path, desplegable: true %>
       <% end %>

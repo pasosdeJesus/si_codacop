@@ -39,6 +39,11 @@ class Ability  < Cor1440Gen::Ability
     if !usuario || usuario.fechadeshabilitacion || !usuario.rol
       return
     end
+    case usuario.rol
+    when Ability::ROLADMIN
+      can :manage, Msip::Respaldo7z
+    end
+
   end # initialize
 
 end
